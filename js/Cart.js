@@ -294,7 +294,7 @@ export default class Cart {
       throw new Error('Le script ne continu pas');
     } else {
       const sendOrder = await fetch(
-        'https://back-p5oc.onrender.com//api/products/order',
+        'https://back-p5oc.onrender.com/api/products/order',
         {
           method: 'POST',
           headers: {

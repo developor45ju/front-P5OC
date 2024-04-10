@@ -95,7 +95,7 @@ export default class Product {
       const productId = product.get('id');
 
       const response = await fetch(
-        `https://back-p5oc.onrender.com//api/products/${productId}`
+        `https://back-p5oc.onrender.com/api/products/${productId}`
       );
       this.kanapData = await response.json();
 
