@@ -40,7 +40,7 @@ export default class Cart {
       let articles = '';
       let nbTotalArticle = 0;
       let priceTotal = 0;
-      const response = await fetch(`https://back-p5oc.onrender.com//api/products/`);
+      const response = await fetch(`https://back-p5oc.onrender.com/api/products/`);
       const kanapAPI = await response.json();
       this.kanapAPI = kanapAPI;
 
