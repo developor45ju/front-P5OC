@@ -28,7 +28,7 @@ export default class Kanaps {
 
   async displayKanaps() {
     try {
-      const response = await fetch('http://localhost:3000/api/products');
+      const response = await fetch('https://back-p5oc.onrender.com/api/products');
       this.allKanaps = await response.json();
       this.allKanaps.forEach((kanap) => {
         this.putCardsProducts += `<a href="./product.html?id=${kanap._id}">
